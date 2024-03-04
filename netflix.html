@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        }
+
+        .nav{
+            background: transparent;
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 12vh;
+        }
+
+        .nav-items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-items button{
+            background: rgb(229,9,20);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 1rem;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .nav-items select{
+            padding: 0.5rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            background: transparent;
+            margin-right: 1rem;
+        }
+
+        .main{
+            background: url("https://assets.nflxext.com/ffe/siteui/vlv3/c38a2d52-138e-48a3-ab68-36787ece46b3/eeb03fc9-99c6-438e-824d-32917ce55783/IN-en-20240101-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .main h2{
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .main h3{
+            font-size: 1.9rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+
+        .main h4{
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .inputs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inputs input{
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.61);
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: large;
+            border: 1px solid gray;
+            margin-right: 10px;
+            width: 25rem;
+            color: white;
+        }
+
+        .inputs button{
+            background: rgb(229,9,20);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: x-large;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .brand img{
+            width: 175px;
+        }
+
+        .main-inner{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.589);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="brand">
+            <img src="./logo.svg" alt="">
+        </div>
+        <div class="nav-items">
+            <select name="" id="">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+            <button>Sign In</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-inner">
+            <h2>Unlimited movies, TV shows and more</h2>
+            <h3>Watch anywhere. Cancel anytime</h3>
+            <h4>Ready to watch? Enter your email to create or restart your membership.</h4>
+            <div class="inputs">
+                <input type="text" placeholder="Email address">
+                <button>Get Started <img src="arrow.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
